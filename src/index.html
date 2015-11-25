@@ -1,0 +1,29 @@
+<html>
+    
+    
+    <head>
+        <title>Typescript with Angular JS</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+        <link rel="stylesheet" href="assets/css/bootstrap-theme.css"/>
+        <script src="js/libs/jquery.min.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+        <script src="js/libs/angular.js"></script>
+    </head>
+    
+    <body>
+        
+        <header>
+            <h1>Welcome to typescript</h1>
+            <div hello-world=""></div>
+            
+            <div  >
+               <button type="button" ng-show="!editable" ng-click="editable=true">+</button>
+               <button type="button" ng-show="editable">OK</button>
+                <section editable-label="" editable="editable" text-model="Text"></section>
+                
+            </div>
+        </header>
+        
+        <script src="js/libs/requirejs.js" data-main="js/main.js?_v=16" ></script>
+    </body>
+</html>
