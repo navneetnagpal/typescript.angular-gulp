@@ -1,1 +1,6 @@
 node_modules
+src/js/components
+src/js/datamodels
+src/js/*.js
+src/js/*.ts
+src/js/*.map
