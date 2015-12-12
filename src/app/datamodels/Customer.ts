@@ -11,4 +11,4 @@ class Employee extends Person {
     }
 }
 
-    new Employee("Bruce","Wayne",30,"Batman");
+new Employee("Bruce","Wayne",30,"Batman");

@@ -1,0 +1,11 @@
+<div class="notes-container">
+    <button class="btn btn-primary" ng-click="nctrl.add()">+</button>
+    <br/>
+
+    <div ng-repeat="note in nctrl.notes" class="editable-label-inst">
+        <button class="btn-danger btn-remove" ng-show="!note.editable" ng-click="nctrl.remove($index)">X
+        </button>
+        <editable-label style="{{note.randomStyle}}" editable="note.editable" text-model="note.text"></editable-label>
+
+    </div>
+</div>

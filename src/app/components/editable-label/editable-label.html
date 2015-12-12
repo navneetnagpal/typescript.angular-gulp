@@ -1,0 +1,14 @@
+<div class="editable-label">
+    
+    <div ng-show="editable">
+        <textarea class="txt-edit form-control" ng-model="localModel" type="text"></textarea>
+    </div>
+    <div ng-show="!editable">
+        <span class="txt-label clickable">
+            <pre ng-show="!localModel" class="{{style}}">Click to Add</pre>
+            <pre ng-show="localModel" class="{{style}}">{{localModel}}</pre>
+        </span>
+    </div>
+    
+    
+</div>
