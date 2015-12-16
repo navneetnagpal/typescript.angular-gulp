@@ -11,6 +11,7 @@ class NoteController {
         this.noteService.get('all').then((note:INote)=>{
             console.log(note);
         });
+        this.add();
     }
     loadColors(){
         this.randomColors.push('bg-info');

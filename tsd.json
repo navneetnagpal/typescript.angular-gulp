@@ -16,6 +16,9 @@
     },
     "jqueryui/jqueryui.d.ts": {
       "commit": "a81c34dcfd6b681b55eefd02b3f19e9635bc1e9c"
+    },
+    "angular-ui-bootstrap/angular-ui-bootstrap.d.ts": {
+      "commit": "11322524f8db9cdb921427cad84cd22fe2d4f965"
     }
   }
 }

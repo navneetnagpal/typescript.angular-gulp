@@ -1,6 +1,7 @@
 require.config({
   paths: {
       'angular' : 'libs/angular',
+      'angular.ui':'libs/angular.ui-bootstrap',
       'jquery' : 'libs/jquery.min',
       'jqueryui' : 'libs/jquery-ui.min',
       'bootstrap' : 'libs/bootstrap.min', 
@@ -10,8 +11,11 @@ require.config({
       angular: {
           exports : 'angular'
       },
+      'angular.ui':{
+        deps:['jquery','bootstrap','angular']
+      },
       app:{
-          deps:['jquery','jqueryui','bootstrap','angular']
+          deps:['jquery','jqueryui','bootstrap','angular', 'angular.ui']
       }
   },
   baseUrl: '/js',

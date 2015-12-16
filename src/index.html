@@ -6,47 +6,83 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/bootstrap-theme.css" />
     <link rel="stylesheet" href="assets/jquery-ui.min.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" /> 
+    <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 
 <body>
     <div class="container">
         <header class="bg-warning header-main">
-            <h1>Welcome to TypeScript</h1>  
-            <h4>Angular JS & Gulp</h4>  
+            <h1>Welcome to TypeScript</h1>
+            <h4>Angular JS & Gulp</h4>
         </header>
         <div class="row">
             <div class="col-md-6 col-xs-12">
-                <div class="ng-cloak single-component" ng-cloak="" ng-controller="EditableController as ctrl">
-                    <h3 class="">Editable Label Component</h3>
 
-                    <span ng-show="ctrl.lastUpdated" class="last-updated btn-success">
+                <div class="ng-cloak " ng-cloak="" ng-controller="EditableController as ctrl">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Editable Label Component</div>
+                        <div class="panel-body">
+                            <span ng-show="ctrl.lastUpdated" class="last-updated btn-success">
                         <strong>Last Editied:</strong>
                         {{ctrl.lastUpdated | date: 'MMM dd,yyyy hh:mm:ss a'}}
                     </span>
 
-                    <editable-label                         
-                        class="editable-label"                         
-                        editable="ctrl.editable" 
-                        text-model="ctrl.text">
-                        
-                    </editable-label>
-                        <button type="button" ng-click="ctrl.open()">Open New</button>       
-                        <button type="button" ng-click="ctrl.open2()">Open New 2</button>    
-                        
+                            <editable-label class="editable-label" editable="ctrl.editable" text-model="ctrl.text">
+
+                            </editable-label>
+
+                        </div>
+
+
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Movable Popup</div>
+                        <div class="panel-body">
+                            <button type="button" ng-click="ctrl.open()">Open New</button>
+                            <button type="button" ng-click="ctrl.open2()">Open New 2</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 ">
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">All Notes</div>
+                    <div class="panel-body">
+                        <note-editor class="note-editor "></note-editor>
+                    </div>
                 </div>
 
 
             </div>
-            <div class="col-md-6 col-xs-12 ">
-               <div class="all-notes">
-                    <h3 class="">All Notes</h3>
-                    <note-editor class="note-editor "></note-editor>
-               </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Checkbox Sample</div>
+                    <div class="panel-body">
+                        <input type="checkbox" ng-model="testCheck" value="hello" />
+                        <input type="checkbox" ng-model="testCheck" value="hello2" />
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Modal Popup Sample</div>
+                    <div class="panel-body">
+                        <modal-test></modal-test>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <script src="js/libs/requirejs.js" data-main="js/main.js?_v=16"></script>
 </body>
 
