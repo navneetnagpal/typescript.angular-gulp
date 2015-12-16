@@ -1,3 +1,4 @@
+import DatePickerController = require('controllers/DatePickerCtrl');
 import EditableLabel = require('components/editable-label/editable-label');
 import EditableController= require('components/editable-label/EditableController');
 import NoteEditor = require('components/note-editor/note-editor');
@@ -10,6 +11,7 @@ import TestComponent2 = require('components/test-component/test-component2');
 import NoteService = require('components/note-editor/NoteService');
 
 let application = angular.module('app',['ui.bootstrap'])
+            .controller('DatePickerCtrl',DatePickerController)
             .controller('ModalInstanceCtrl',ModalInstanceCtrl)
             .controller('EditableController',EditableController)
             .directive('editableLabel',EditableLabel)

@@ -70,7 +70,17 @@
                         <input type="checkbox" ng-model="testCheck" value="hello2" />
                     </div>
                 </div>
-
+                 <div class="panel panel-default">
+                    <div class="panel-heading">Datepciker Sample</div>
+                    <div class="panel-body" ng-controller="DatePickerCtrl as dtCtrl">
+                         <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="dtCtrl.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default" ng-click="dtCtrl.open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6 col-xs-12">
                 <div class="panel panel-default">
